@@ -8,11 +8,11 @@ def rock_paper_scissors(number_wins):                      #Камень, Нож
         if (wins_user < number_wins) and (wins_PC < number_wins): # Условие входа при котором игра продолжается
             action_computer = random.randint(1, 3) # Генерируется число от 1 до 3, границы включая
             if action_computer == 1: # Происходит присвоения имен к генерируемым числам, для того чтобы лучше отображать в терминале что было выбрано компьютером
-                combination = 'камень'
+                combination = 'Камень'
             elif action_computer == 2:
-                combination = 'ножницы'
+                combination = 'Ножницы'
             else:
-                combination = 'бумага'
+                combination = 'Бумага'
 
             action = int(input('1 - Камень, 2 - Ножницы, 3 - Бумага: ')) # Пользователь вводит свое число
 
